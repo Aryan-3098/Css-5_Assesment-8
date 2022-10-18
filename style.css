@@ -1,0 +1,183 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* ------------------------------------------------------------First Page-------------------------------------------------------------- */
+/*--------------- Container-------------- */
+body{
+    background-color: #fef847;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
+.box_list{
+    padding: 0px 100px;
+}
+.box_list li{
+    margin: 5rem 0rem;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr 1fr;
+    grid-column-gap:3rem; 
+}
+.box_list li span{
+    display: flex;
+    align-items: flex-end;
+    font-size: 25px;
+}
+/* ------------------Boxes ---------------*/
+.box{
+    width: 100px;
+    height: 100px;
+}
+.p1_b1{
+    background-color: #508890;
+    animation-name:animation_b1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.p1_b2{
+    background-color: #9f9f9f;
+    animation-name:animation_b2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.p1_b3{
+    background-color: #508890;
+    animation-name:animation_b3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.p1_b4{
+   
+    border: 1px solid black;
+}
+#b4_1{
+    background-color: #508890;
+    animation-name:animation_b4_1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+#b4_2{
+    background-color: #9a4735;
+    animation-name:animation_b4_2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+#b4_3{
+    background-color: #61a94d;
+    animation-name:animation_b4_3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+/* ----------------------Animations and Transformations----------------------- */
+/*------------- First Page---------------- */
+@keyframes animation_b1{
+
+    0%{
+        transform: skewX(15deg);
+    }
+    25%{
+        transform: skewX(-15deg);
+    }
+    50%{
+        transform: skewX(15deg);
+    }
+    75%{
+        transform: skewX(-15deg);
+    }
+    100%{
+        transform: skewX(15deg);
+    }
+}
+@keyframes animation_b2{
+
+    0%{
+        transform: skewY(15deg);
+    }
+    25%{
+        transform: skewY(-15deg);
+    }
+    50%{
+        transform: skewY(15deg);
+    }
+    75%{
+        transform: skewY(-15deg);
+    }
+    100%{
+        transform: skewY(15deg);
+    }
+}
+
+@keyframes animation_b3{
+
+    25%{
+        transform: rotate(1turn);
+    }
+    100%{
+        transform: rotate(3turn);
+    }
+}
+@keyframes animation_b4_1{
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(0.5);
+    }
+}
+@keyframes animation_b4_2{
+    0%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(0.5);
+    }
+}
+@keyframes animation_b4_3{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(105deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(105deg);
+    }
+}
+/* -----------------Second Page ----------------------*/
+#b1_2nd:hover{
+    width: 30rem;
+}
+#b2_2nd:hover{
+    width: 20rem;
+    height: 20rem;
+}
+#b1_2nd:hover{
+    width: 30rem;
+}
+#b1_2nd:hover{
+    width: 30rem;
+}
+#b1_2nd:hover{
+    width: 30rem;
+}
+#b1_2nd:hover{
+    width: 30rem;
+}
+#b1_2nd:hover{
+    width: 30rem;
+}
+/* ----------------------------------------------------------------------Media Query ---------------------------------------------------------------------------*/
+@media only screen and (max-width:666px) and (min-width:100px){
+    .main{
+        width:99%;
+    }
+}
