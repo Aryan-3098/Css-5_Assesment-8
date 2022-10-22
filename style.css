@@ -143,7 +143,6 @@ body{
 }
 #smoke img{
     transform: rotate(-90deg);
-    width: ;
     height: 200px;
 }
 #wheels{
@@ -268,6 +267,24 @@ body{
 #b2_2nd:hover{
     width: 20rem;
     height: 20rem;
+}
+#t_f1{
+    transition-timing-function:ease ;
+}
+#t_f2{
+    transition-timing-function:ease-in ;
+}
+#t_f3{
+    transition-timing-function:ease-in-out ;
+}
+#t_f4{
+    transition-timing-function:ease-out ;
+}
+#t_f5{
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+#t_f6{
+    transition-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1) ;
 }
 
 /*--------------------- Third Page Animation------------- */
